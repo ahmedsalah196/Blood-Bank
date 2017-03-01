@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooad.BarChartController">
+   <children>
+      <BarChart fx:id="bar" layoutX="34.0" prefHeight="414.0" prefWidth="869.0" title="Blood Levels">
+        <xAxis>
+          <CategoryAxis label="Blood Type" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Blood Level/ml" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton layoutX="51.0" layoutY="414.0" onAction="#logout" style="-fx-background-color: #330066;" text="Back" textFill="#f2f2f2" />
+   </children>
+</AnchorPane>

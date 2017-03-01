@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooad.LabTechController">
+   <children>
+      <JFXTextField fx:id="ID" labelFloat="true" layoutX="56.0" layoutY="75.0" promptText="Pack Code" />
+      <JFXCheckBox fx:id="acc" layoutX="69.0" layoutY="252.0" text="Accepted" />
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="445.0" layoutY="134.0" onAction="#update" prefHeight="41.0" prefWidth="85.0" style="-fx-background-color: #330066;" text="Update" textFill="#eeebeb" />
+      <JFXComboBox fx:id="type" layoutX="65.0" layoutY="155.0" prefHeight="27.0" prefWidth="150.0" promptText="Type" />
+      <JFXButton fx:id="update1" buttonType="RAISED" layoutX="445.0" layoutY="216.0" onAction="#save" prefHeight="41.0" prefWidth="85.0" style="-fx-background-color: #330066;" text="Save" textFill="#eeebeb" />
+      <AnchorPane fx:id="roott" layoutX="182.0" layoutY="390.0" prefHeight="41.0" prefWidth="231.0" />
+      <JFXButton fx:id="bchart" layoutX="56.0" layoutY="332.0" onAction="#drawBarChart" style="-fx-background-color: #330066;" text="Bar Chart" textFill="#fcf5f5" />
+      <JFXButton layoutX="462.0" layoutY="345.0" onAction="#logout" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #330066;" text="Log Out" textFill="#f8f6f6" />
+      <JFXButton fx:id="bchart1" layoutX="146.0" layoutY="332.0" onAction="#drawLines" style="-fx-background-color: #330066;" text="Line Chart" textFill="#fcf5f5" />
+   </children>
+</AnchorPane>

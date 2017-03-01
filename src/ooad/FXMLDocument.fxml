@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooad.FXMLDocumentController">
+    <children>
+      <JFXButton buttonType="RAISED" layoutX="113.0" layoutY="363.0" onAction="#ClerkHandler" prefHeight="33.0" prefWidth="120.0" ripplerFill="#3f21d7" style="-fx-background-color: #428bca;" styleClass="btn-primary" text="Sign in as Clerk" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Light" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="365.0" onAction="#TechnicianHandler" prefHeight="33.0" prefWidth="148.0" ripplerFill="#3f21d7" style="-fx-background-color: #5bc0de;" styleClass="btn-info" text="Sign in as Technician" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Light" size="14.0" />
+         </font></JFXButton>
+      <JFXTextField id="loginId" fx:id="loginID" labelFloat="true" layoutX="180.0" layoutY="159.0" promptText="Username">
+         <font>
+            <Font name="Helvetica Neue Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField id="loginPassword" fx:id="loginPassword" labelFloat="true" layoutX="182.0" layoutY="242.0" promptText="Password">
+         <font>
+            <Font name="Helvetica Neue Bold" size="14.0" />
+         </font></JFXPasswordField>
+    </children>
+</AnchorPane>

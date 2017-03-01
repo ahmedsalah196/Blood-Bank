@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooad.ClerkInterfaceController">
+   <children>
+      <JFXTextField fx:id="d" labelFloat="true" layoutX="46.0" layoutY="94.0" promptText="New Donor ID" />
+      <JFXTextField fx:id="type" labelFloat="true" layoutX="46.0" layoutY="44.0" promptText="Name" />
+      <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="57.0" layoutY="255.0" onAction="#newDonor" ripplerFill="#29c8d7" style="-fx-background-color: #330066;" text="Register New Donor " textFill="#f5eeee" />
+      <JFXButton fx:id="btn11" buttonType="RAISED" layoutX="451.0" layoutY="437.0" onAction="#save" prefHeight="27.0" prefWidth="121.0" ripplerFill="#29c8d7" style="-fx-background-color: #330066;" text="Save" textFill="#f5eeee" />
+      <AnchorPane fx:id="roott" layoutX="179.0" layoutY="488.0" prefHeight="49.0" prefWidth="265.0" />
+      <JFXTextField fx:id="txt1" labelFloat="true" layoutX="392.0" layoutY="44.0" promptText="Donor ID " />
+      <JFXTextField fx:id="txt2" labelFloat="true" layoutX="392.0" layoutY="94.0" promptText="Amount Extracted" />
+      <JFXButton fx:id="btn21" buttonType="RAISED" layoutX="414.0" layoutY="255.0" onAction="#addBloodPack" ripplerFill="#29c8d7" style="-fx-background-color: #330066;" text="Add Blood Pack" textFill="#eeeeee" />
+      <JFXTextField fx:id="phone" labelFloat="true" layoutX="46.0" layoutY="147.0" promptText="Phone Number" />
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="46.0" layoutY="196.0" maxWidth="205.0" minWidth="205.0" prefHeight="33.0" prefWidth="205.0" promptText="Email" />
+      <JFXDatePicker fx:id="date" layoutX="390.0" layoutY="196.0" promptText="Donation Date" />
+      <JFXTextField fx:id="packBar" labelFloat="true" layoutX="392.0" layoutY="147.0" promptText="Barcode" />
+      <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="488.0" onAction="#logout" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #330066;" text="Log Out " textFill="#eeeded" />
+      <JFXComboBox fx:id="bt" layoutX="179.0" layoutY="321.0" promptText="Blood Type" />
+      <JFXTextField fx:id="amountReq" labelFloat="true" layoutX="331.0" layoutY="318.0" promptText="Amount" />
+      <JFXButton buttonType="RAISED" layoutX="271.0" layoutY="384.0" onAction="#request" prefHeight="27.0" prefWidth="121.0" ripplerFill="#29c8d7" style="-fx-background-color: #330066;" text="Request blood" textFill="#f5eeee" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooad.LineChartController">
+   <children>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="36.0" layoutY="440.0" onAction="#back" prefHeight="27.0" prefWidth="121.0" ripplerFill="#29c8d7" style="-fx-background-color: #330066;" text="Back" textFill="#f5eeee" />
+      <LineChart fx:id="line" axisSortingPolicy="NONE" layoutX="43.0" layoutY="14.0" title="Blood Track Level Track over Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Blood Level/ml" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
