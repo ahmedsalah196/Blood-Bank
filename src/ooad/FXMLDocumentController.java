@@ -26,7 +26,7 @@ public class FXMLDocumentController implements Initializable {
     private JFXPasswordField loginPassword;
     @FXML
     private void TechnicianHandler(ActionEvent event) throws Exception{
-        if(new LabTechnician().login(loginID.getText(),loginPassword.getText())){
+//        if(new LabTechnician().login(loginID.getText(),loginPassword.getText())){
             Parent techRoot = FXMLLoader.load(getClass().getResource("LabTech.fxml"));
         
         Scene techScene = new Scene(techRoot);
@@ -35,14 +35,13 @@ public class FXMLDocumentController implements Initializable {
         Stage techStage=(Stage)((Node)event.getSource()).getScene().getWindow();
         techStage.setScene(techScene);
         techStage.show();
-
-        }
-        else System.out.println("not verified");
+//        }
+//        else System.out.println("not verified");
     }
     @FXML
     private void ClerkHandler(ActionEvent even) throws Exception{
         
-        if(new Clerk().login(loginID.getText(),loginPassword.getText())){
+//        if(new Clerk().login(loginID.getText(),loginPassword.getText())){
         Parent clerkRoot = FXMLLoader.load(getClass().getResource("clerkInterface.fxml"));
         
         Scene clerkScene = new Scene(clerkRoot);
@@ -52,9 +51,9 @@ public class FXMLDocumentController implements Initializable {
         clerkStage.setScene(clerkScene);
         clerkStage.show();
 
-        }
-        else 
-        System.out.println("not verified");
+//        }
+//        else 
+//        System.out.println("not verified");
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {

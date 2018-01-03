@@ -9,10 +9,10 @@
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib/activation.jar" size="124332" download="eager" />
-    <jar href="lib/gson-2.8.0.jar" size="231952" download="eager" />
+    <jar href="lib/gson-2.8.2.jar" size="232932" download="eager" />
     <jar href="lib/javax.mail-1.4.4.jar" size="495041" download="eager" />
-    <jar href="lib/jfoenix.jar" size="2206016" download="eager" />
-    <jar href="ooad.jar" size="58912" download="eager" />
+    <jar href="lib/jfoenix-1.9.1.jar" size="2384613" download="eager" />
+    <jar href="ooad.jar" size="54227" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ooad" >
     <param name="requiredFXVersion" value="8.0+"/>
